@@ -1,5 +1,5 @@
 // import { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 
 const DogDetails = () => {
   const { dogId } = useParams();
@@ -20,6 +20,7 @@ const DogDetails = () => {
           <Link to="gallery">Галерея</Link>
         </li>
       </ul>
+      <Outlet />
     </>
   );
 };
