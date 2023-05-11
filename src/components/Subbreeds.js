@@ -10,3 +10,5 @@ export const Subbreeds = () => {
   
   return <div>Subbreeds: {dogId}</div>;
 };
+
+export default Subbreeds;
